@@ -1,0 +1,36 @@
+extends ./layout/index
+
+block slider 
+    .slider
+        h1 Rio de Janeiro 
+        em aventura
+
+block contenido
+    main.container.mt-5
+        h2.text-center.mb-5 Sobre Nosotros
+        .row.mb-5
+            .col-md-6    
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam gravida augue leo, non congue urna porta a.
+                    Nam bibendum eleifend lacus vel scelerisque. In hac habitasse platea dictumst. Maecenas a pretium ligula.
+                    Suspendisse potenti. Fusce ac placerat diam, bibendum tincidunt mi. Sed eleifend quam sed luctus consequat.
+                p Phasellus non ultrices ipsum, sit amet lacinia turpis. Mauris et orci euismod, rutrum ex quis, ornare lacus.
+                 Donec sagittis non justo at sodales. Pesco en la toaj kekls. Cristiano Ronaldo es el mejor de todos los tiempos.
+            .col-md-6   
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nosotros", class="img-fluid") 
+
+        include ./layout/bloque_viajes
+
+    .descuento 
+        .container
+            .row
+                .col-md-6
+                    .contenido
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canada
+                        p.fecha 20 de Diciembre de 2023 - 28 de Diciembre de 2023
+                        p.precio $2,500 USD
+
+    .container 
+        h2.mt-5.text-center Comentarios     
+        include ./layout/bloque_comentarios
+            
